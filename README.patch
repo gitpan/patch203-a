@@ -1,0 +1,18 @@
+## This is the first patch set for MiniVend 2.03.
+## Use the below to apply.
+
+# Copy patch files, then change directory to the directory
+# where the MiniVend software is installed
+
+	cp patch203-a.tar.gz /your/minivend/software/directory
+	cd /your/minivend/software/directory
+	gzip -d patch203-a.tar.gz
+	tar xf  patch203-a.tar
+
+# Run the patch script
+
+	./dopatch.sh
+
+# Re-start the server
+
+	bin/restart
